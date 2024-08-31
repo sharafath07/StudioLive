@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+    <title>Nila Digital Studio</title>
+  </head>
+  <body>
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+    
+    <div id="progress-bar"></div>
+
+    <header class="header" id="home">
+      <video autoplay loop muted id="bg-video">
+        <source src="assets/bgvideo.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">
+              <img src="assets/logo-white.png" alt="logo" />
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li class="nav__logo">
+            <a href="#">
+              <img src="assets/logo-white.png" alt="logo" />
+            </a>
+          </li>
+          <li><a href="#service">SERVICES</a></li>
+          <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="section__container about__container" id="about">
+      <h2 class="section__header">WE CAPTURE THE MOMENTS</h2>
+      <p class="section__description">
+        At Nila Studio, we excel at capturing those fleeting, meaningful moments that are deeply significant to you. With a deep passion for photography and an acute attention to detail, we turn everyday moments into unforgettable memories.
+      </p>
+      <p class="section__description">
+        Whether it’s a major life event, a candid portrait, or the awe-inspiring beauty of nature, we aim to capture the true essence of each moment, preserving your treasured memories for a lifetime. Trust us to beautifully document the magic of your life’s journey, one frame at a time.
+      </p>
+      <img src="assets/logo-dark.png" alt="logo" />
+    </div>
+
+    <div class="section__container portfolio__container">
+      <h2 class="section__header">~ PORTFOLIO ~</h2><div class="portfolio__grid">
+        <div class="portfolio__card">
+          <a href="javascript:void(0);" onclick="openModal('portraits', 0)">
+            <img src="assets/viral/potrait/18.jpg" alt="portfolio" loading="lazy" class="portfolio_photos">
+          </a>
+          <div class="portfolio__content">
+            <button class="btn" onclick="openModal('portraits', 0)">VIEW PORTFOLIO</button>
+          </div>
+        </div>
+        <div class="portfolio__card">
+          <a href="javascript:void(0);" onclick="openModal('pre-weddings', 0)">
+            <img src="assets/viral/potrait/24.jpg" alt="portfolio" loading="lazy" class="portfolio_photos">
+          </a>
+          <div class="portfolio__content">
+            <button class="btn" onclick="openModal('pre-weddings', 0)">VIEW PORTFOLIO</button>
+          </div>
+        </div>
+        <div class="portfolio__card">
+          <a href="javascript:void(0);" onclick="openModal('weddings', 0)">
+            <img src="assets/viral/weddings/wedding_portfolio.JPG" alt="portfolio" loading="lazy" class="portfolio_photos">
+          </a>
+          <div class="portfolio__content">
+            <button class="btn" onclick="openModal('weddings', 0)">VIEW PORTFOLIO</button>
+          </div>
+        </div>
+        
+        
+      </div>
+      
+    </div>
+
+    <div id="portfolioModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="modal-image-container">
+          <img id="modalImage" src="" alt="Portfolio Image">
+          <div class="modal-overlay">
+            <span id="imageCounter"></span>
+            <p id="imageCaption"></p>
+          </div>
+        </div>
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+      </div>
+    </div>
+    
+    
+
+    <section class="service" id="service">
+      <div class="section__container service__container">
+        <h2 class="section__header">~ SERVICES ~</h2>
+        <p class="section__description">
+          At Nila Studio, we provide a variety of professional photography services designed to meet your specific needs. With a dedication to excellence and creativity, we aim to surpass your expectations, delivering stunning visuals that authentically and passionately tell your story.
+        </p>
+        <div class="service__grid">
+          <div class="service__card">
+            <h4>Portrait Sessions</h4>
+            <p>
+              Our portrait sessions are designed to showcase your personality
+              and style in stunning imagery.
+            </p>
+          </div>
+          <div class="service__card">
+            <h4>Maternity Sessions</h4>
+            <p>
+              Embrace the beauty and miracle of new life with our maternity and
+              newborn photography sessions.
+            </p>
+          </div>
+          <div class="service__card">
+            <h4>Family Sessions</h4>
+            <p>
+              Cherish the bond of family with our custom-designed playful candid
+              moments and portrait sessions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section__container gallery__container">
+      <h2 class="section__header">~ GALLERY ~</h2>
+      <div class="gallery__grid">
+        <img src="assets/viral/gallery/0.jpg" alt="gallery" />
+        <img src="assets/viral/gallery/1.jpg" alt="gallery" />
+        <img src="assets/viral/gallery/2.jpg" alt="gallery" />
+        <img src="assets/viral/gallery/3.jpg" alt="gallery" />
+        <img src="assets/viral/gallery/4.jpg" alt="gallery" />
+        <img src="assets/viral/gallery/5.jpg" alt="gallery" />
+        <img src="assets/viral/gallery/6.jpg" alt="gallery" />
+        <img src="assets/viral/gallery/7.jpg" alt="gallery" />
+      </div>
+      <div class="gallery__btn">
+        <button class="btn">VIEW GALLERY</button>
+      </div>
+    </section>
+
+    <section class="album" id="album">
+      <div class="section__container album__container">
+        <div class="album__content">
+          <h2 class="section__header">~ Albums ~</h2>
+          <h4>Preserving Your Memories in Beautiful Albums</h4>
+          <p>
+            At Nila Studio, we understand that your photos are more than just images; they are memories that deserve to be cherished and preserved. Our custom-designed albums are crafted to tell your story with elegance and emotion, allowing you to relive your special moments whenever you wish. Each album is thoughtfully curated and beautifully presented, ensuring that your memories are not just seen but felt. Whether it's a wedding, a family gathering, or a personal milestone, our albums provide a timeless way to keep your cherished moments close at hand.
+
+          </p>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container instagram__container">
+      <h2 class="section__header">~ INSTAGRAM ~</h2>
+      <div class="instagram__flex">
+        <img src="assets/viral/gallery/0.jpg" alt="instagram" />
+        <img src="assets/viral/gallery/1.jpg" alt="instagram" />
+        <img src="assets/viral/gallery/2.jpg" alt="instagram" />
+        <img src="assets/viral/gallery/3.jpg" alt="instagram" />
+        <img src="assets/viral/gallery/4.jpg" alt="instagram" />
+        <img src="assets/viral/gallery/5.jpg" alt="instagram" />
+        <img src="assets/viral/gallery/6.jpg" alt="instagram" />
+        <img src="assets/viral/gallery/7.jpg" alt="instagram" />
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <img src="assets/logo-dark.png" alt="logo" />
+          <div class="footer__socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <!-- <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-pinterest-line"></i></a> -->
+          </div>
+        </div>
+        <div class="footer__col">
+          <ul class="footer__links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#service">SERVICES</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="contact__info">
+            <p><a href="https://wa.me/+91 9909213987" target="_blank">
+                <i class="ri-whatsapp-fill"></i> Chat with me on WhatsApp
+            </a></p>
+            
+            <p><a href="tel:+91 9909213987>
+                <i class="ri-phone-fill"></i> Call me: +91 990 921 3987
+            </a></p>
+            
+            <p><a href="mailto:nital16476@gmail.com">
+                <i class="ri-mail-fill"></i> Email me: nital16476@gmail.com
+            </a></p>
+        </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+    <a href="#" id="back-to-top" class="btn">↑ Back to Top</a>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  </body>
+</html>
