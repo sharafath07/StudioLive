@@ -93,6 +93,30 @@ window.onclick = function(event) {
   }
 };
 
+document.addEventListener("DOMContentLoaded", function () {
+  const video = document.getElementById('bg-video');
+  const videoSource = video.querySelector('source');
+
+  if ('IntersectionObserver' in window) {
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          videoSource.src = videoSource.dataset.src;
+          video.load();
+          observer.unobserve(video);
+        }
+      });
+    });
+
+    observer.observe(video);
+  } else {
+    // Fallback for browsers that don't support IntersectionObserver
+    videoSource.src = videoSource.dataset.src;
+    video.load();
+  }
+});
+
+
 
 window.onload = function() {
   document.getElementById('preloader').style.display = 'none';
