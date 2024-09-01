@@ -99,7 +99,6 @@ body {
 
   @media (max-width: 768px) {
     #bg-video {
-      display: block;
       width: 100%;
       height: auto;
       object-fit: cover;
