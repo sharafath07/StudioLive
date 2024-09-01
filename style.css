@@ -530,7 +530,7 @@ nav {
 
 .album {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("assets/viral/album.jpg");
+    url("assets/album.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -581,7 +581,7 @@ nav {
   align-items: center;
   gap: 1rem;
 
-  animation: scroll 45s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 .instagram__flex img {

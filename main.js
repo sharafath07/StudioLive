@@ -27,6 +27,15 @@ const weddingImages = [
   "assets/viral/weddings/4.jpg",
   "assets/viral/weddings/5.jpg",
 ];
+const albumImages = [
+  "assets/viral/album/0.jpg",
+  "assets/viral/album/1.jpg",
+  "assets/viral/album/2.jpg",
+  "assets/viral/album/3.jpg",
+  "assets/viral/album/4.jpg",
+  "assets/viral/album/5.jpg",
+  "assets/viral/album/6.jpg"
+];
 
 let currentIndex = 0;
 let currentImages = [];
@@ -42,6 +51,9 @@ function openModal(category, index) {
       break;
     case 'weddings':
       currentImages = weddingImages;
+      break;
+    case 'albums':
+      currentImages = albumImages;
       break;
     default:
       currentImages = [];
