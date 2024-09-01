@@ -81,7 +81,7 @@ body {
 
 .header {
     position: relative;
-    min-height: 600px; /* or height: 100vh; for full viewport height */
+    min-height: 600px; 
     overflow: hidden;
   
 }
@@ -92,16 +92,20 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the video covers the entire header area */
-    z-index: -1; /* Ensures the video stays behind other content */
+    object-fit: cover;
+    object-position: center; 
+    z-index: -1;
   }
 
   @media (max-width: 768px) {
     #bg-video {
-      display: none;
-    }
-    .header {
-      background: url("assets/header.jpg") center center / cover no-repeat; /* Fallback for mobile */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
     }
   }
   
@@ -206,6 +210,7 @@ nav {
 
 .nav__links.open {
   transform: translateY(0);
+  display: flex;
 }
 
 .nav__links .nav__logo {
@@ -224,6 +229,10 @@ nav {
   transform: translateY(-3px);
 }
 
+.ri-menu-line, .ri-close-line {
+  font-size: 24px;
+  cursor: pointer;
+}
 .about__container .section__description {
   max-width: 900px;
   margin-inline: auto;
