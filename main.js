@@ -11,12 +11,11 @@ const portraitImages = [
 ];
 
 const pre_weddingImages = [
-  "assets/viral/weddings/0.jpg",
-  "assets/viral/weddings/1.jpg",
-  "assets/viral/weddings/2.jpg",
-  "assets/viral/weddings/3.jpg",
-  "assets/viral/weddings/4.jpg",
-  "assets/viral/weddings/5.jpg",
+ "assets/viral/prewedding/01.jpg",
+ "assets/viral/prewedding/02.jpg",
+ "assets/viral/prewedding/03.jpg",
+ "assets/viral/prewedding/04.jpg",
+ "assets/viral/prewedding/05.jpg",
 ];
 
 const weddingImages = [
@@ -37,6 +36,24 @@ const albumImages = [
   "assets/viral/album/6.jpg"
 ];
 
+const babyShowerImages = [
+  "assets/viral/baby shower/02.jpg",
+  "assets/viral/baby shower/03.jpg",
+  "assets/viral/baby shower/04.jpg",
+  "assets/viral/baby shower/10.jpg",
+  "assets/viral/baby shower/11.jpg",
+  "assets/viral/baby shower/12.jpg",
+];
+
+
+const mundanImages = [
+  "assets/viral/mundan/6.jpg",
+  "assets/viral/mundan/2.jpg",
+  "assets/viral/mundan/3.jpg",
+  "assets/viral/mundan/4.jpg",
+  "assets/viral/mundan/5.jpg",
+]
+
 let currentIndex = 0;
 let currentImages = [];
 
@@ -51,6 +68,12 @@ function openModal(category, index) {
       break;
     case 'weddings':
       currentImages = weddingImages;
+      break;
+    case 'baby-shower':
+      currentImages = babyShowerImages;
+      break;
+    case 'Mundan':
+      currentImages = mundanImages;
       break;
     case 'albums':
       currentImages = albumImages;
