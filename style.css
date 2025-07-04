@@ -153,18 +153,19 @@ body {
   
 
 nav {
-  position: sticky;
+  background-color: #171717;
+  position: fixed;
   isolation: isolate;
-  top: 0;
+  top: 0px;
   width: 100%;
-  max-width: var(--max-width);
-  margin: auto;
+  /* max-width: var(--max-width); */
+  margin: 0;
   z-index: 1000;
   transition: background-color 0.3s ease-in-out;
-
 }
 
 .nav__header {
+  width: 100%;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -174,7 +175,7 @@ nav {
 }
 
 .nav__logo img {
-  max-width: 70px;
+  max-width: 150px;
 }
 
 .nav__menu__btn {
@@ -693,9 +694,8 @@ nav {
   }
 
   nav {
-    padding: 2rem 1rem;
-    position: static;
-    max-width: 900px;
+    padding: 2rem 3rem;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -720,7 +720,7 @@ nav {
   }
 
   .nav__links .nav__logo img {
-    max-width: 150px;
+    max-width: 300px;
   }
 
   .portfolio__grid {
