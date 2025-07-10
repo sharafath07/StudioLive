@@ -135,11 +135,11 @@ window.onload = function() {
   document.getElementById('preloader').style.display = 'none';
 }
 
-document.getElementById('mute-toggle').addEventListener('click', function() {
-  var video = document.getElementById('bg-video');
-  video.muted = !video.muted;  // Toggle the muted property
-  this.textContent = video.muted ? 'Unmute' : 'Mute';
-});
+// document.getElementById('mute-toggle').addEventListener('click', function() {
+//   var video = document.getElementById('bg-video');
+//   video.muted = !video.muted;  // Toggle the muted property
+//   this.textContent = video.muted ? 'Unmute' : 'Mute';
+// });
 
 
 
